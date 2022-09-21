@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment07</title>
+    <style>
+        .box
+        {
+            
+            
+            margin:auto;
+            border-width: 3px;
+            border-style: dashed;
+            border-color: black;
+             background-color: #FF4143;
+             width: 800px;
+             color: white;
+            
+        }
+    </style>
+    <style>
+        .box2
+        {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="box2">
+        <h2><ins>Student Registration From Table in HTML</ins></h2>
+    </div>
+    </center>
+       <div class="box">
+       <table width="80%"  cellspacing="10">
+        <tr >
+            <td>First Name</td>
+            <td>
+                <input type="text" placeholder="Ghanendra" maxlength="50">
+                (Max 50 Characters Allowed)
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" placeholder="Yadav" maxlength="50">
+            (Max 50 Characters Allowed)</td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td>
+                <input type="email" placeholder="yghanendra@gmail.com">
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+            <input type="number" placeholder="7842xxxxxx" maxlength="10">(10 Digits Allowed)
+        </td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio">
+            Male
+            <input type="radio">
+            Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Date Of Birth
+        </td>
+        <td>
+            <input  placeholder="Date :" type="number" min="1" max="31"> <select></select>
+            <input placeholder="Month :" type="number" min="1" max="12"> <select></select>        
+            <input placeholder="Year :" type="number" min="1995" max="2035"> <select></select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Address
+        </td>
+        <td> <textarea cols="40" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <td>City</td>
+        <td>
+            <input type="text" placeholder="Bangalore" maxlength="50">
+        (Max 50 Characters Allowed)
+       </td>
+    </tr>
+    <tr>
+        <td>Pin Code</td>
+        <td><input type="number" placeholder="560068" maxlength="6">(Max 6 Numbers Allowed)</td>
+     </tr>
+     <tr>
+        <td>State</td>
+        <td><input type="text" placeholder="Karnataka">(Max 50 Characters Allowed)</td>
+    </tr>
+    <tr>
+        <td>Country</td>
+        <td><input type="text" placeholder="India"></td>
+    </tr>
+    <tr>
+        <td rowspan="2">Hobbies</td>
+        <td><input type="checkbox">Drawing<input type="checkbox">Singing<input type="checkbox">Dancing<input type="checkbox">Sketching</td>
+        <br>
+        <tr>
+        <td><input type="checkbox">others <input type="text" placeholder="Ex-Teaching">(Max 50 Characters Allowed)</td>
+        </tr>
+    </tr>
+    <tr>
+        <td rowspan="5">
+            Qualification
+
+        </td>
+         <td><input type="checkbox">High School(10th)</td>
+         
+         <tr>
+         <td><input type="checkbox">Higher School(12th)</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">Graduation(Bachelors)</td>
+           </tr>
+           <tr>
+            <td><input type="checkbox">Post Graduation(Bachelors)</td>
+           </tr>
+           <tr>
+            <td><input type="checkbox">Phd</td>
+           </tr>
+    </tr>
+    <tr>
+        <td rowspan="9">Courses Applied</td>
+        
+            <td><input type="radio">BCA(Bachelor of Computer Appication)</td>
+          <tr>
+            <td>
+                <input type="radio">B.Com(Bachelor of Commerce)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">B.Sc(Bachelor of Science)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">BA(Bachelor of Arts)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">MCA(Masters Of Computer Applications)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">M.Com(Masters of Commerce)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">M.Sc(Masters of Science)
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input type="radio">M.A(Masters of Arts)
+            </td>
+          </tr>
+    </tr>
+      
+      </table>
+           <table width="60%" >
+            <tr>
+                <td align="right"><input type="submit"></td><td align="left"><input type="reset"></td>
+              </tr>
+        </table>
+    </div> 
+</body>
+</html>
