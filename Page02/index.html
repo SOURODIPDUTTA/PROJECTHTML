@@ -1,0 +1,167 @@
+<!-- This is my First Page Design using Grid ,Flex in CSS HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-project-IBM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap" rel="stylesheet"> 
+    <style type="text/css">
+        .container
+        {
+            display:grid;
+            grid-template-rows:150px 40px 700px 150px;
+            /* border:2px solid black; */
+             /* row-gap: 10px; */
+        }
+       .header
+       {
+        display: grid;
+        grid-template-rows: 50px 50px;
+        /* border:2px solid black; */
+        row-gap: 10px;
+       }
+       .header1
+       {     
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 50px;
+         grid-row-gap: 15px;
+       }
+    
+      .item1h1
+      {      
+       margin: 10px 20px 10px 50px;
+     
+      }
+      .item2h1
+      {
+        text-align:right;
+        padding: 10px 40px 10px 0px;
+        /* border: 2px solid black; */
+      }
+      .header2
+      {
+        
+        display:grid;
+         grid-template-columns: 1000px 1fr;
+        border-top: 1px solid blue;
+      }
+     .item1h2
+      {
+        /* border: 2px solid black; */
+        margin: 0px 10px ;
+       
+      }
+      .item1h2>ul>li
+      {
+        display: inline-block;
+        padding: 10px 0px;
+        margin-right: 20px;
+        /* border: 2px solid black; */
+      }
+      .item1h2>ul>li>a
+      {
+        text-decoration: none;
+        color:#221b2f;
+
+      }
+      .item2h2
+      {
+        text-align: right;
+        /* border: 2px solid black; */
+        padding: 10px 60px 10px 0px;
+       
+      }
+      .break
+      {
+        background-color: #F4F4F4;
+        min-height: 40px;
+       border: 2px solid #f4f4f4;
+      }
+      .items
+      {
+        color:#221b2f;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .content
+      {
+        display: grid;
+        grid-template-columns: 550px 1fr;
+        /* border:2px solid black;  */
+
+      }  
+      .content1
+      {
+               
+      }
+      .content2
+      {
+
+      }
+    </style>
+</head>
+<body>
+  <!-- container starts here -->
+   <div class="container">
+    <!-- Header starts here -->
+    <div class="header">
+      <!-- Header 1 -->
+        <div class="header1">
+               <div class="items item1h1" style="padding: 0px 0px 20px 0px ; "><img src="page01img/ibm.jpg"></div>
+                <div class="items item2h1">Join our talent Community</div>
+
+        </div>
+        <!-- Header 2 -->
+        <div class="header2">
+            <div class="items item1h2">
+                <ul>
+                    <li><a href="#">Career Home</a></li>
+                    <li><a href="#">Discover Our Stories</a></li>
+                    <li><a href="#">Diversity And Inclusion</a></li>
+                    <li><a href="#">Meet IBMers</a></li>
+                </ul>
+            </div>
+            <!-- Language choice -->
+            <div class="items item2h2">
+                 English
+                <select style="background-color: white;font-family: 'Montserrat', sans-serif; box-shadow: none; margin-top: 20px; color:#516DA9;width: 30px;">
+                    <option value="0"></option>
+                    <option value="1">Arab</option>
+                    <option value="2">Bengali</option>
+                    <option value="3">Dutch</option>
+                    <option value="4">English(India)</option>
+                    <option value="5">English(UK)</option>
+                    <option value="6">English(Britain)</option>
+                    <option value="7">English(Amirican)</option>
+                    <option value="8">Latin</option>
+                    <option value="9">Spanish</option>
+                    <option value="10">Urdu</option>
+
+                </select>
+            </div>
+
+        </div>
+            <!-- Header 2 ends here -->
+    </div>
+    <!-- Header ends here Row 1 of container ends-->
+    <!-- Division of the block Row 2 of the container-->
+    <div class="break">
+      
+    </div>
+      <!-- Division part ends Row 2 of the container ends-->
+      <div class="content">
+          <div class="items content1">
+              <h1>Application Developer : Java Full Stack</h1>
+          </div>
+          <div class="content2">
+             
+          </div>
+      </div>
+  
+   </div>
+   <!-- Main container ends -->
+</body>
+</html>
