@@ -1,5 +1,5 @@
 <!-- code by Sourodip Dutta -->
-<!-- This is my First Page Design using Grid ,Flex in CSS HTML -->
+<!-- This is my First Page Design using Grid ,Flex in CSS HTML (An website of IBM) at -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,7 +86,7 @@
       }
       .items
       {
-        color:#221b2f;
+        color:#252527;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
       }
@@ -100,10 +100,11 @@
       }  
       .content1
       {
+        display: grid;
         /* border:2px solid black;  */
          padding: 20px auto;
          margin: 30px;
-         grid-template-rows: 1500px 1fr;
+         grid-template-rows: 1500px 1fr 5 0px 2fr;
       }
       .cont1body
       {
@@ -112,7 +113,7 @@
       .content1opt
       {
         display: grid;
-        grid-template-rows: repeat(5,40px);
+        grid-template-rows: repeat(5,40px) ;
       
         margin: 40px 0px;
         border-top: 2px solid #E0E0E0;
@@ -135,7 +136,8 @@
       .content2
       {
             display: grid;
-            grid-template-rows: 20px 20px 1fr 3fr;
+            grid-template-rows: 20px 30px 400px 3fr;
+            grid-template-columns: 1fr;
             /* padding:40px 30px; */
             row-gap: 20px;
             /* border: 2px solid black; */
@@ -144,7 +146,8 @@
       .icnbx
       {
         display: grid;
-        grid-template-columns: repeat(4,30px);
+        grid-template-columns: repeat(4,40px);
+        
         /* margin:20px 0px; */
         /* border: 2px solid black; */
       }
@@ -156,8 +159,11 @@
      .rightcont
      {
         display: grid;
-        grid-template-rows: 5px repeat(11,1fr);
+        grid-template-rows: 60px repeat(11,30px);
+        grid-template-columns: 1fr;
+        grid-row-gap: 5px;
      }
+     
 
 
     </style>
@@ -280,8 +286,9 @@
             </div>
           <!-- column 1 of content ends here -->
           <div class="items content2">
-            <p>Share This</p>
-            
+            <!-- content2 grid 1  -->
+              <div class="items">Share This</div>
+            <!-- content  2 grid 2 -->
                 <div class="icnbx">                  
                   <div class="logo"><i class="fa-brands fa-facebook fa-xl"></i></div>          
                   <div class="logo"><i class="fa-brands fa-twitter fa-xl"></i></div>
@@ -292,25 +299,34 @@
                   <i class="fa-brands fa-linkedin fa-xl"></i>
                   <i class="fa-solid fa-envelope fa-xl"></i> -->
                 </div>
-                <!-- image of right content-->
+                <!-- image of right content2 grid 3-->
                 <div class="cont2img" >
                   <img src="page01img/rightimg1.jpg" style="width:600px">
                 </div>
                 <!-- key job details -->
                 <div class="rightcont">
-                  
-                    <h1 style="font-weight:bold;">Key Job Details</h1>
-                 
-                  <div>
-                    Country/Region:IN
-                  </div>
-
+                     <div class="items"> <h1>Key Job Details</h1></div>
+                      <div class="items"><b>Country/Region : </b>IN</div>
+                      <div class="items"><b style="font-weight :1000px;">State : </b>Bangalore</div>
+                      <div class="items"><b>Catagory : </b> Terchnical Specialist</div>
+                      <div class="items"><b>Required Education : </b> Bachelors Degree</div>
+                      <div class="items">Position Type : Entry Level</div>
+                      <div class="items">Employment Type : Full-Time</div>
+                      <div class="items">Contract type : Regular</div>
+                      <div class="items">Company : (0063)IBM India Private Limited</div>
+                      <div class="items">Req ID : 564540BR</div>
+                      <div class="items">Travel Required : Up to 20% or 1 day a week</div> 
                 </div>
+                <!-- right content job desc. ends -->
               </div>
+              <!-- right side content ends here -->
           </div>
+          <!-- content ends -->
       </div>
-      <!-- content ends -->
-   </div>
-   <!-- Main container ends */
+<!-- Main container ends -->
+<div class="footer">
+
+</div>
+   
 </body>
 </html>
